@@ -1,0 +1,23 @@
+{
+    "isLoading": false,
+    "isSyncing": false,
+    "loadingNext":false,
+    "isUploadingImages": false,
+    "editHelper": {
+      "helper": 0,
+      "dictionaryData": {},
+      "defaultDictionarySearch": "job"
+    },
+    "resumeTutorial": {},
+    "resumeData": {
+      "_id":"",
+      "createdAt":"",
+      "virtualTemplate":"basic",
+      "resumeName": "Career awesome resume",
+      "EditPageStates": {
+        "BottomDesktopDrawer": false,
+        "resumePreviewScale": 1,
+        "resumeMarginBottom": 0
+      }
+    }
+  }

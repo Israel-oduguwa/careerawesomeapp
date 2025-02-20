@@ -103,7 +103,7 @@ export const authenticationSlice = createAppSlice({
 
 // Selectors returned by `slice.selectors` take the root state as their first argument.
 export const { selectUserData } = authenticationSlice.selectors;
-export const { logoutUser } = authenticationSlice.actions;
+export const { logoutUser, clearError } = authenticationSlice.actions;
 
 // reducers: (create) => ({
 //   // Use the `PayloadAction` type to declare the contents of `action.payload`

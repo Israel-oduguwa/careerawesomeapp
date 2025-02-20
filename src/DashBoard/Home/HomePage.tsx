@@ -86,23 +86,23 @@ function HomePage() {
   return (
     <>
       <div className="bootstrap-wrapper">
-        <div className="container">
+        <div className="container p-[0px!important]">
           <section className="mb-5">
             <div>
               <div className="row items-center">
-                <div className="col-md-12 col-lg-8">
+                <div className="col-md-12 col-lg-8 mt-6">
                   <div>
-                    <Card className="px-6 py-4  border-0">
+                    <Card className="px-6 py-4 shadow-lg border-slate-100 dark:border-0">
                       <CardDescription>
                         <div className="row items-center">
                           <div className="col-md-8 ">
                             <div className="max-w-[400px]">
-                              <h1 className="text-xl text-slate-900 dark:text-white font-bold mt-1 antialiased mb-2">
+                              <h1 className="text-2xl text-slate-900 dark:text-white font-bold mt-1 antialiased mb-2">
                                 Hi {userData.profile.firstName}, welcome back
                               </h1>
-                              <p className="text-slate-500 dark:text-slate-400 mt-2 text-sm  antialiased">
-                                You have done 76% more sales today. Check your
-                                inventory and update your stocks.
+                              <p className="text-slate-700 dark:text-slate-200 mt-2 text-sm  antialiased">
+                                Start now by creating your resume clicking the
+                                button below to create resume.
                               </p>
                             </div>
                           </div>
@@ -119,15 +119,15 @@ function HomePage() {
                     </Card>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-12">
-                  <Card className="px-6 py-6  border-0">
+                <div className="col-lg-4 col-md-12 mt-6">
+                  <Card className="px-6 py-6 shadow-lg dark:border-0 border-slate-100">
                     <CardDescription>
                       <div className="flex gap-3">
                         <div>
                           <h3 className="text-xl text-slate-900 dark:text-white font-bold mt-1 antialiased ">
                             Upgrade to pro
                           </h3>
-                          <p className="text-slate-500 dark:text-slate-400 mt-1 text-sm  antialiased">
+                          <p className="text-slate-500 dark:text-slate-200 mt-1 text-sm  antialiased">
                             Unlock all features to career awesome
                           </p>
                         </div>
@@ -145,20 +145,14 @@ function HomePage() {
               </div>
             </div>
           </section>
-          <div id="professional-documents">
-            <Card className="px-6 py-4 border-0">
-              <CardDescription>
-                <div>
-                  <h1 className="text-md mb-4 text-slate-900 dark:text-white font-bold mt-1 antialiased ">
-                    Professional Documents
-                  </h1>
-                  <div>
-                    <DocumentsSection />
-                  </div>
-                </div>
-              </CardDescription>
-            </Card>
-          </div>
+          <section id="professional-documents">
+            <div className="p-3 mt-8">
+              <h2 className="text-xl font-bold text-slate-900 m-0">
+                Documents
+              </h2>
+              <DocumentsSection />
+            </div>
+          </section>
         </div>
       </div>
     </>

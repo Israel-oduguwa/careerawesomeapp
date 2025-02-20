@@ -1,4 +1,4 @@
-import LayoutB from "../../DashBoard/Layout/LayoutB";
+import LayoutA from "../../DashBoard/Layout/LayoutA";
 import { Toaster } from "@/components/ui/toaster"
 export default function DashboardLayout({
     children,
@@ -6,5 +6,5 @@ export default function DashboardLayout({
     children: React.ReactNode
   }) {
     // this is the dashboard ui and layout page 
-    return <section><Toaster/><LayoutB>{children}</LayoutB></section>
+    return <section><Toaster/><LayoutA>{children}</LayoutA></section>
   }

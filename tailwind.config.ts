@@ -148,12 +148,23 @@ module.exports = {
           '0%': { transform: 'translateY(-30px) scale(0.2)' },
           '100%': { transform: 'transform: translateY(0px) scale(1)' },
         },
+        'springy-open': {
+          '0%': { transform: 'scaleY(0)', opacity: 0 },
+          '80%': { transform: 'scaleY(1.1)', opacity: 1 },
+          '100%': { transform: 'scaleY(1)', opacity: 1 },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'springy-open': 'springy-open 0.5s ease-in-out',
         'automation-zoom-in': 'automation-zoom-in 0.5s',
       },
+      boxShadow: {
+        'ca1': 'rgba(149, 157, 165, 0.2) 0px 8px 24px',
+        "ca2":"rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
+      }
+
     },
   },
   safelist: [

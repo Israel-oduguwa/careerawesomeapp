@@ -1,13 +1,23 @@
-import React from "react";
+import React, {useState} from "react";
 import { Button } from "@/components/ui/button";
+import CreateResumeModal from "@/ResumeBuilder/CreateResumeModal";
 function ResumeSection() {
+  const [open, setOpen] = useState(false)
+  const handleAddResume  = ()  =>{
+    // this will open a modal that users will use 
+    
+    setOpen(true)
+  }
+  const handleClose = () =>{
+    setOpen(false)
+  }
   return (
     <div
-      style={{ minHeight: "51vh" }}
-      className="items-center mt-10 flex justify-center min-h-80 rounded-lg border border-dashed shadow-sm"
+      style={{ minHeight: "56vh" }}
+      className="items-center mt-4 flex bg-tremor-background-subtle justify-center min-h-80 rounded-lg border border-dashed shadow-sm"
     >
       <div
-        style={{ maxWidth: "500px" }}
+        style={{ maxWidth: "560px" }}
         className="flex p-4 flex-col items-center gap-1 text-center "
       >
         <img
@@ -21,8 +31,9 @@ function ResumeSection() {
           Craft a standout resume that opens doors to endless opportunities and
           join thousands who have already landed their dream job!
         </p>
-        <Button className="mt-4">Add Resume</Button>
+        <Button onClick={handleAddResume} className="mt-4"> Add Resume</Button>
       </div>
+      <CreateResumeModal open={open} setOpen={setOpen} />
     </div>
   );
 }
